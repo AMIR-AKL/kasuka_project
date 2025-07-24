@@ -18,7 +18,7 @@ function Portfolio() {
             <a href="#">اینترنت</a>
           </div>
         </div>
-        <div class=" mt-20">
+        <div className=" mt-20">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-5">
             <img
               className="w-100 h-70"
