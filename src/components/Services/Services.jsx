@@ -6,7 +6,7 @@ function Services() {
       <div className="container">
         <Title title2={"خدمات"} title1={"خدمات ما را بررسی کنید"}></Title>
 
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3 gap-5 ">
           <ServicesItem
             iconId={"#dribbble"}
             title={"لورم اپیسوم"}
