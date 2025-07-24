@@ -1,64 +1,73 @@
 @import "tailwindcss";
+@layer base {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		scrollbar-width: thin;
+		scrollbar-color: #ffd230 #555657;
+	}
+}
 @utility container {
-  margin-inline: auto;
-  padding-inline: 2rem;
+	margin-inline: auto;
+	padding-inline: 2rem;
 }
 @theme {
-  --font-sans-bold: "sans Bold";
-  --font-sans-Demibold: "sans Demibold";
-  --font-sans-black: "sans black";
-  --font-sans-Extrablack: "sans Extrablack";
-  --font-sans-Extrabold: "sans Extrabold";
-  --font-sans-Heavy: "sans Heavy";
-  --font-sans-Light: "sans Light";
-  --font-sans-UltraLight: "sans UltraLight";
-  --font-sans-Medium: "sans Medium";
-  --font-sans-Thin: "sans Thin";
-  --font-sans-Regular: "sans Regular";
+	--font-sans-bold: "sans Bold";
+	--font-sans-Demibold: "sans Demibold";
+	--font-sans-black: "sans black";
+	--font-sans-Extrablack: "sans Extrablack";
+	--font-sans-Extrabold: "sans Extrabold";
+	--font-sans-Heavy: "sans Heavy";
+	--font-sans-Light: "sans Light";
+	--font-sans-UltraLight: "sans UltraLight";
+	--font-sans-Medium: "sans Medium";
+	--font-sans-Thin: "sans Thin";
+	--font-sans-Regular: "sans Regular";
 }
 @font-face {
-  font-family: "sans Bold";
-  src: url("../public/font/woff2/IRANSansX-Bold.woff2") format("woff2");
+	font-family: "sans Bold";
+	src: url("../public/font/woff2/IRANSansX-Bold.woff2") format("woff2");
 }
 @font-face {
-  font-family: "sans Demibold";
-  src: url("../public/font/woff2/IRANSansX-DemiBold.woff2") format("woff2");
+	font-family: "sans Demibold";
+	src: url("../public/font/woff2/IRANSansX-DemiBold.woff2") format("woff2");
 }
 @font-face {
-  font-family: "sans black";
-  src: url("../public/font/woff2/IRANSansX-Black.woff2") format("woff2");
+	font-family: "sans black";
+	src: url("../public/font/woff2/IRANSansX-Black.woff2") format("woff2");
 }
 @font-face {
-  font-family: "sans Extrablack";
-  src: url("../public/font/woff2/IRANSansX-ExtraBlack.woff2") format("woff2");
+	font-family: "sans Extrablack";
+	src: url("../public/font/woff2/IRANSansX-ExtraBlack.woff2") format("woff2");
 }
 @font-face {
-  font-family: "sans Extrabold";
-  src: url("../public/font/woff2/IRANSansX-ExtraBold.woff2") format("woff2");
+	font-family: "sans Extrabold";
+	src: url("../public/font/woff2/IRANSansX-ExtraBold.woff2") format("woff2");
 }
 @font-face {
-  font-family: "sans Heavy";
-  src: url("../public/font/woff2/IRANSansX-Heavy.woff2") format("woff2");
+	font-family: "sans Heavy";
+	src: url("../public/font/woff2/IRANSansX-Heavy.woff2") format("woff2");
 }
 @font-face {
-  font-family: "sans Light";
-  src: url("../public/font/woff2/IRANSansX-Light.woff2") format("woff2");
+	font-family: "sans Light";
+	src: url("../public/font/woff2/IRANSansX-Light.woff2") format("woff2");
 }
 @font-face {
-  font-family: "sans UltraLight";
-  src: url("../public/font/woff2/IRANSansX-UltraLight.woff2") format("woff2");
+	font-family: "sans UltraLight";
+	src: url("../public/font/woff2/IRANSansX-UltraLight.woff2") format("woff2");
 }
 @font-face {
-  font-family: "sans Medium";
-  src: url("../public/font/woff2/IRANSansX-Medium.woff2") format("woff2");
+	font-family: "sans Medium";
+	src: url("../public/font/woff2/IRANSansX-Medium.woff2") format("woff2");
 }
 @font-face {
-  font-family: "sans Thin";
-  src: url("../public/font/woff2/IRANSansX-Thin.woff2") format("woff2");
+	font-family: "sans Thin";
+	src: url("../public/font/woff2/IRANSansX-Thin.woff2") format("woff2");
 }
 @font-face {
-  font-family: "sans Regular";
-  src: url("../public/font/woff2/IRANSansX-Regular.woff2") format("woff2");
+	font-family: "sans Regular";
+	src: url("../public/font/woff2/IRANSansX-Regular.woff2") format("woff2");
 }
 /* @utility bg-hero {
   background: url("../../public/image/bg-header/hero-bg.jpg");
@@ -69,101 +78,105 @@
   z-index: 1;
 } */
 @utility bg-hero {
-  background: url("/public/image/bg-header/hero-bg.jpg");
-  @apply parallex;
+	background: url("/public/image/bg-header/hero-bg.jpg");
+	@apply parallex;
 }
 @utility parallex {
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  background-attachment: fixed;
-  z-index: 1;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	background-attachment: fixed;
+	z-index: 1;
 }
 @utility parallex-content {
-  height: 680px;
-  margin: 0 auto;
-  color: #fff;
+	height: 680px;
+	margin: 0 auto;
+	color: #fff;
 }
 .parallex:after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.6) 40%,
-    rgba(0, 0, 0, 0.3) 100%
-  );
-  z-index: -1;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0.6) 40%,
+		rgba(0, 0, 0, 0.3) 100%
+	);
+	z-index: -1;
 }
 
 @utility bg-feature {
-  background: url("/public/image/bg-features/features.jpg");
-  /* min-height: 450px; */
-  @apply bg-center bg-cover bg-no-repeat;
+	background: url("/public/image/bg-features/features.jpg");
+	/* min-height: 450px; */
+	@apply bg-center bg-cover bg-no-repeat;
 }
 .head-services::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  display: inline-block;
-  background: #ffde9e;
-  margin: 4px 10px;
+	content: "";
+	width: 120px;
+	height: 1px;
+	display: inline-block;
+	background: #ffde9e;
+	margin: 4px 10px;
 }
 @utility bg-cta {
-  background: url("/public/image/bg-city/cta-bg.jpg");
-  @apply parallex;
+	background: url("/public/image/bg-city/cta-bg.jpg");
+	@apply parallex;
 }
 .bg-cta::after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.6) 40%,
-    rgba(0, 0, 0, 0.3) 100%
-  );
-  z-index: -1;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0.6) 40%,
+		rgba(0, 0, 0, 0.3) 100%
+	);
+	z-index: -1;
 }
 
 @utility active {
-  @apply bg-amber-400;
+	@apply bg-amber-400;
 }
 @utility bg-counts {
-  background: url("/public/image/counts/counts-img.jpg") center center no-repeat;
-  background-size: cover;
+	background: url("/public/image/counts/counts-img.jpg") center center no-repeat;
+	background-size: cover;
 
-  min-height: 420px;
+	min-height: 420px;
 }
 @utility bg-members {
-  background: url("/public/image/bg-members/testimonials-bg.jpg");
-  @apply parallex;
+	background: url("/public/image/bg-members/testimonials-bg.jpg");
+	@apply parallex;
 }
 .bg-members::after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.6) 40%,
-    rgba(0, 0, 0, 0.3) 100%
-  );
-  z-index: -1;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0.6) 40%,
+		rgba(0, 0, 0, 0.3) 100%
+	);
+	z-index: -1;
 }
 @utility w-email {
-  width: calc(100% - 110px);
+	width: calc(100% - 110px);
+}
+.swiper-pagination-bullet {
+	color: #ffd230 !important;
+	background-color: #ffd230 !important;
 }
